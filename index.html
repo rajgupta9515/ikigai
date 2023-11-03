@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #ffd8d8;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #1d7ade;
+            padding: 20px 0;
+        }
+        .navbar {
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #fff;
+            margin: 0 10px;
+            text-transform: uppercase;
+        }
+        .slider {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .carousel-caption h3 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .carousel-caption p {
+            font-size: 18px;
+        }
+        /* About Section Styles */
+        #about {
+            text-align: center; 
+        }
+
+        #about img {
+            display: block; 
+            margin: 0 auto; 
+            margin-top: 20px; 
+        }
+
+        #about {
+            background-color: #040404;
+            padding: 50px 0;
+        }
+        #about h2 {
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+        }
+        #about p {
+            font-size: 18px;
+            color: #fff;
+        }
+        #about p img{
+            display: flex;
+            align-items: center;
+            height: 20%;
+            width: 30%;
+        }
+        
+        /* Contact Section Styles */
+        #contact {
+            background-color: #222;
+            padding: 50px 0;
+        }
+        #contact h2 {
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+        }
+        #contact p {
+            font-size: 18px;
+            color: #fff;
+        }
+        /* Location Section Styles */
+        #location {
+            background-color: #111;
+            padding: 50px 0;
+        }
+        #location h2 {
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+        }
+        #location p {
+            font-size: 18px;
+            color: #fff;
+        }
+        /* Social Links Styles */
+        .social-links {
+            background-color: #222;
+            padding: 20px 0;
+        }
+        .social-links h3 {
+            color: #fff;
+            font-size: 24px;
+        }
+        .list-inline-item {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        .list-inline-item a {
+            color: #fff;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            color: #fff;
+            font-size: 16px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            .navbar-brand {
+                font-size: 20px;
+            }
+            .navbar-nav .nav-link {
+                font-size: 16px;
+            }
+            .carousel-caption h3 {
+                font-size: 28px;
+            }
+            .carousel-caption p {
+                font-size: 14px;
+            }
+            #about h2 {
+                font-size: 28px;
+            }
+            #about p {
+                font-size: 16px;
+            }
+            #contact h2 {
+                font-size: 28px;
+            }
+            #contact p {
+                font-size: 14px;
+            }
+            #location h2 {
+                font-size: 28px;
+            }
+ 
+          
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 450px; Adjust the height as needed */
+}
+
+            
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#location">Location</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Slider -->
+<section id="home" class="slider">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://th.bing.com/th/id/OIP.UJxK0oNqZiJQrUqiLNy__AHaEK?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="Slider Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Car1</h3>
+                    <p>GO speed.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_og_01.jpg" class="d-block w-100" alt="Slider Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Car2</h3>
+                    <p>Doom Doom.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?cs=srgb&dl=pexels-mike-bird-3729464.jpg&fm=jpg" class="d-block w-100" alt="Slider Image 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Car3</h3>
+                    <p>Go With Super Car.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <!-- Add your portfolio items here -->
+</section>
+
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+        <!-- <p><img src="tour-about.jpg"/></p> -->
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <h2>Services</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet..</p>
+        <!-- <p><img src="tour-about.jpg"/></p> -->
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any inquiries, feel free to reach out. We're always ready to assist you.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Location Section -->
+<section id="location">
+    <div class="container">
+        <h2>My Location</h2>
+        <!-- <p>You can find us at Photography Portfolio Studio, 123 Picture Avenue, Varanasi, 221304. We welcome you to visit us and explore the world of photography.</p>
+        <p> Contact information (9543276***)</p>
+        <p>Just 800 meters away from Airport Varanasi</p>
+       <p>Near Dalmandi Lahartara</p>
+        <p>Parking Availability</p>
+       <p>24/7 Hours of service at reasonable rates</p> -->
+       <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14142.430922559803!2d77.5933245!3d27.6056887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sus!4v1698981259550!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</section>
+
+<!-- Social Links -->
+<section class="social-links">
+    <div class="container">
+        <h3>Connect with Us</h3>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; GLAU 2023-24.</p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
